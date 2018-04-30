@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		//Math 1
+		function zero_negativity(array)
+		{
+			hasNegatives = false;
+			for(let i = 0; i <array.length; i ++)
+			{
+				if(array[i] < 0)
+				{
+					hasNegatives = true;
+				}
+			}
+			return hasNegatives;
+		}
+		console.log(zero_negativity([1,-2,4,5,5])) //output: true
+
+		//Math 2
+		function is_even(number)
+		{
+			isEven = false;
+			if(number % 2 == 0)
+			{
+				isEven = true;
+			}
+			return isEven;
+		}
+
+		console.log(is_even(6)); //Output: true
+		console.log(is_even(7)); // output: false
+
+		//Math 3
+		function how_many_even(array)
+		{
+			count = 0;
+			for(let i = 0; i < array.length; i++)
+			{
+				if( array[i] % 2 == 0 )
+				{
+					count++;
+				}
+			}
+			return count;
+		}
+
+		console.log(how_many_even([2,4,6,9])); //Output 3
+
+		//Math 4
+		function create_dummy_array(number)
+		{
+			result = [];
+			for(let i = 0; i < number; i++){
+				randomInt = Math.random()*10;
+				result.push(randomInt);
+			}
+			
+			return result;
+		}
+
+		console.log(create_dummy_array(8));
+
+		//Math 5
+		function random_choice(array)
+		{
+			randomChoice = Math.floor(Math.random()*array.length);
+			return array[randomChoice]
+		}
+
+		console.log(random_choice([1,2]));
+	</script>
+</body>
+</html>
